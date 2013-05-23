@@ -1,4 +1,4 @@
-package modelteste;
+package testedeimprimir;
 
 import java.util.Arrays;
 import java.util.Calendar;
@@ -8,7 +8,7 @@ import model.CandlestickFactory;
 import model.Negocio;
 
 
-public class TestCandlestickFactory {
+public class TestaCandlestickFactory {
     public static void main(String[] args){
 	Calendar hoje = Calendar.getInstance();
 	
