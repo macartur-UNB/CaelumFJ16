@@ -9,7 +9,7 @@ import model.Negocio;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class NegocioTeste {
+public class NegocioTest {
     
      @Test
      public void dataDoNegocioEhImutavel() {
