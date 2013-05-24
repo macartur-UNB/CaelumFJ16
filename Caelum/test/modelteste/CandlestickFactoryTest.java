@@ -55,39 +55,39 @@ public class CandlestickFactoryTest {
        Negocio negocio2 = new Negocio(45.0, 2, hoje);
        Negocio negocio3 = new Negocio(50.0, 2, hoje);
        Negocio negocio4 = new Negocio(50.5, 2, hoje);
-       Negocio negocio5 = new Negocio(45.5, 2, hoje);
+       Negocio negocio5 = new Negocio(52.5, 2, hoje);
        
-       List<Negocio> negocios = Arrays.asList(negocio1,negocio2,negocio3,negocio4,negocio5);
+       List<Negocio> negocios = Arrays.asList(negocio1,negocio2,negocio4,negocio5,negocio3);
                     
        Collections.sort(negocios);
        
-       Assert.assertEquals(negocio1,negocios.get(0));
-       Assert.assertEquals(negocio2, negocios.get(1));
-       Assert.assertEquals(negocio3,negocios.get(2));
-       Assert.assertEquals(negocio4, negocios.get(3));
-       Assert.assertEquals(negocio5,negocios.get(4));
+       Assert.assertEquals(negocio1.getPreco(),negocios.get(0).getPreco());
+       Assert.assertEquals(negocio2.getPreco(), negocios.get(1).getPreco());
+       Assert.assertEquals(negocio3.getPreco(),negocios.get(2).getPreco());
+       Assert.assertEquals(negocio4.getPreco(), negocios.get(3).getPreco());
+       Assert.assertEquals(negocio5.getPreco(),negocios.get(4).getPreco());
        
    }
    
    public void negociosEmOrdemDecrescenteDeValor(){
        Calendar hoje = Calendar.getInstance();
        
-       Negocio negocio1 = new Negocio(40.5, 2, hoje);
+       Negocio negocio1 = new Negocio(55.5, 2, hoje);
        Negocio negocio2 = new Negocio(45.0, 2, hoje);
-       Negocio negocio3 = new Negocio(50.0, 2, hoje);
-       Negocio negocio4 = new Negocio(50.5, 2, hoje);
-       Negocio negocio5 = new Negocio(45.5, 2, hoje);
+       Negocio negocio3 = new Negocio(42.0, 2, hoje);
+       Negocio negocio4 = new Negocio(35.5, 2, hoje);
+       Negocio negocio5 = new Negocio(20.5, 2, hoje);
        
-       List<Negocio> negocios = Arrays.asList(negocio1,negocio2,negocio3,negocio4,negocio5);
+       List<Negocio> negocios = Arrays.asList(negocio4,negocio5,negocio1,negocio2,negocio3);
                     
        Collections.sort(negocios);
        Collections.reverse(negocios);
        
-       Assert.assertEquals(negocio5,negocios.get(0));
-       Assert.assertEquals(negocio4, negocios.get(1));
-       Assert.assertEquals(negocio3,negocios.get(2));
-       Assert.assertEquals(negocio2, negocios.get(3));
-       Assert.assertEquals(negocio1,negocios.get(4));
+       Assert.assertEquals(negocio5.getPreco(),negocios.get(0).getPreco());
+       Assert.assertEquals(negocio4.getPreco(), negocios.get(1).getPreco());
+       Assert.assertEquals(negocio3.getPreco(),negocios.get(2).getPreco());
+       Assert.assertEquals(negocio2.getPreco(), negocios.get(3).getPreco());
+       Assert.assertEquals(negocio1.getPreco(),negocios.get(4).getPreco());
        
    }
         

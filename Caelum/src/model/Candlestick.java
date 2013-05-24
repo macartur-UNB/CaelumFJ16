@@ -19,7 +19,6 @@ public final class Candlestick {
 		this.maximo = maximo;
 		this.volume = volume;
 		this.data = data;
-		
 	}
         private void verificarParametros(double abertura, double fechamento,
                                          double minimo, double maximo, 

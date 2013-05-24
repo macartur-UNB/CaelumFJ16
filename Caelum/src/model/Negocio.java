@@ -57,7 +57,7 @@ public final class Negocio implements Comparable<Negocio>{
     @Override
     public int compareTo(Negocio negocio) {
         
-        if(this.preco < negocio.preco){// se for menor este vai para a frente
+        if(this.preco < negocio.getPreco()){// se for menor este vai para a frente
             return -1;
         }else{//se for maior o que estiver sendo comparado vai para frente
             return 1;
